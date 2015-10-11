@@ -1,0 +1,33 @@
+
+//
+//  PrefixHeader.pch
+//  项目一
+//
+//  Created by mac on 15/8/3.
+//  Copyright (c) 2015年 chenhao. All rights reserved.
+//
+
+
+/*
+ 1 选择 Other 创建 PCH File
+ 2 打开工程的选项 搜索 Prefix Header
+ 3 双击后面的空白处 
+ 4 将创建好的 pch 文件拖入到输入框 中自动生成文件路径
+ */
+#ifndef ____PrefixHeader_pch
+#define ____PrefixHeader_pch
+
+//屏幕的宽高
+#define kScreenWeight [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//uiview扩展类
+#import "UIViewExt.h"
+
+//从网络读取图片
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+
+
+
+#endif
